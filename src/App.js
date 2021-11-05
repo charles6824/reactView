@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import {Container,Row,Col} from 'react-bootstrap'
+import Content from './components/Content'
+import FootNav from './components/FootNav'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div
+      style={{
+        background: `linear-gradient(rgba(0, 0, 0, 0.615),rgba(0,0,0,0.615)),url('/images/bg-BO.jpg')`,
+      }}
+    >
+      <Container className='bg-bo'>
+        <Row className='justify-content-center'>
+          <Col sm='12'>
+            <Content />
+            <FootNav/>
+          </Col>
+        </Row>
+      </Container>
     </div>
   );
 }
 
-export default App;
+export default App

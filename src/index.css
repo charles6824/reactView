@@ -1,13 +1,80 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+/* general Styling */
+.bg-bo{
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.cart{
+    font-size: 9px;
+    position: absolute;
+    background: red !important;
+    padding: 2px 7px;
+    border-radius: 50px;
+    text-align: center !important;
+    top: 5px;
+    right: 1px;
+}
+/* Dashboard Styling */
+.bg-disp{
+    background: rgb(70, 0, 0) !important;
+    padding: 10px !important;
+    border-radius: 25px !important;
+}
+.text-wel{
+    font-size: 30px;
+    color: white;
+    font-weight: 700;
+    text-shadow: 0 0 5px black;
+}
+
+@media(max-width:576px){
+    .text-wel{
+        font-size: 18px;
+    }
+}
+.bg-ven{
+    background: rgb(28, 1, 117) !important;
+    padding: 30px !important;
+    border-radius: 40px !important;
+    margin-top: 1.2rem !important;
+}
+.bg-ord{
+    background: rgb(34, 0, 34) !important;
+    padding: 30px !important;
+    border-radius: 40px !important;
+    margin-top: 1.2rem !important;
+}
+.bg-ven h4 a{
+    color: white !important;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-bottom: 7px;
+    text-decoration: none;
+}
+.bg-ord h4 a{
+    color: white;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-bottom: 7px;
+    text-decoration: none;
+}
+.carousel-indicators button{
+  display: none !important;
+}
+.carousel-control-prev-icon{
+  border-radius: 50px;
+  background: red;
+}
+.carousel-control-next-icon{
+  border-radius: 50px;
+  background: red;
 }
